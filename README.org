@@ -1,6 +1,31 @@
-#+TITLE: org-logging
-
 * Overview
-  
-Automatic adds/updates the modified property in a task property drawer
 
+  Set of functions and helpers to make working with timestamps and
+  property drawers a bit easier.
+
+** Adding a modified date stamp
+
+Use the `ol-insert-datetime` function to add or update the ~MODIFIED~
+property of the current task/subtree to the current date and time, and
+insert an indented, bolded date stamp.
+
+#+BEGIN_SRC org
+
+* A task
+
+Some notes about this task
+#+END_SRC
+
+Running `ol-insert-datetime` (bound by default to `C-c d` in
+~org-mode~), will result in:
+
+#+BEGIN_SRC org
+* A task
+  :PROPERTIES:
+  :MODIFIED: 2017-07-31 21:00
+  :END:
+
+  Some notes about this task
+
+  *2017/07/31* An update about this task.
+#+END_SRC
