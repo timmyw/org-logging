@@ -1,4 +1,6 @@
 #+TITLE: org-logging
 
+* Overview
+  
 Automatic adds/updates the modified property in a task property drawer
 
