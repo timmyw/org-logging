@@ -19,7 +19,7 @@
   "Insert the current date at point and update the MODIFIED property."
   (interactive)
   (let ((ds (current-time)))
-    (ol-add-datetime (format-time-string "%Y-%m-%d %H:%M" ds))
+    (ol-add-datetime (format-time-string "<%Y-%m-%d %H:%M>" ds))
     (insert (format-time-string "*%Y/%m/%d* " ds))
     (indent-for-tab-command)))
 
