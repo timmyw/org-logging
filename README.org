@@ -1,3 +1,5 @@
+#+TITLE: org-logging
+
 * Overview
 
   Set of functions and helpers to make working with timestamps and

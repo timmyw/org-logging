@@ -27,6 +27,6 @@
           (lambda ()
             (local-set-key (kbd "C-c d") 'ol-insert-datetime)))
 
-(provide  'ol-utils)
+(provide  'org-logging)
 
 ;;; org-logging.el ends here
